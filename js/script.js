@@ -23,27 +23,87 @@ const ICONS = {
 /* ---------- shared "chapter" cards shown inside every wishlist ---------- */
 
 const BOOKS_CARD = {
-  key: "books",
-  wide: true,
-  clickable: true,
-  chapter: "books",
-  image: "assets/books-chapter.jpeg",
-  category: "o lume cu totul nouă",
-  title: "Cărți",
-  description:
-    "Povești în care mă pot pierde, cu o pătură aproape și liniștea pe care tu ai făcut mereu loc să o găsesc.",
+    key: "books",
+    wide: true,
+    clickable: true,
+    chapter: "books",
+    image: "assets/books-chapter.jpeg",
+    category: "o lume cu totul nouă",
+    title: "Cărți",
+    description:
+        "Povești în care mă pot pierde, cu o pătură aproape și liniștea pe care tu ai făcut mereu loc să o găsesc.",
+};
+
+const LIP_CARD = {
+    key: "Lip_stick",
+    wide: true,
+    clickable: false,
+    chapter: "Lip_stick",
+    image: "assets/Lip_stick.jpg",
+    category: "Elegant și dulce",
+    title: "Lip stick",
+    description:
+        "Nuanța perfectă pentru toamnă și iarnă — exact culoarea care-mi lipsește din trusa de machiaj.",
+};
+
+const NALA_CARD = {
+    key: "NALA",
+    wide: true,
+    clickable: false,
+    chapter: "NALA",
+    image: "assets/nala.jpg",
+    category: "Cafinated and me time",
+    title: "Set cadou NALA",
+    description:
+        "Un moment de răsfăț acasă, cu miros de cafea  exact ritualul de self care pe care mi-l doresc de ziua mea.",
+};
+
+const NALA2_CARD = {
+    key: "NALA2",
+    wide: true,
+    clickable: false,
+    chapter: "NALA2",
+    image: "assets/nala2.jpg",
+    category: "Cafinated and me time",
+    title: "Set cadou NALA",
+    description:
+        "Un moment de răsfăț acasă, cu miros de cafea  exact ritualul de self care pe care mi-l doresc de ziua mea.",
+};
+
+const NALA3_CARD = {
+    key: "NALA3",
+    wide: true,
+    clickable: false,
+    chapter: "NALA3",
+    image: "assets/nala3.jpg",
+    category: "Cafinated and me time",
+    title: "Set cadou NALA",
+    description:
+        "Un moment de răsfăț acasă, cu miros de cafea  exact ritualul de self care pe care mi-l doresc de ziua mea.",
+};
+
+const JOSEON_CARD = {
+    key: "JOSEON",
+    wide: true,
+    clickable: false,
+    chapter: "JOSEON",
+    image: "assets/joseon.jpg",
+    category: "Glass skin",
+    title: "Set îngrijire Beauty of Joseon",
+    description:
+        "Rutina coreeană despre care tot citesc — vreau să continui cu masca de față orez , cleanser ulei SPF50",
 };
 
 const CLOTHES_CARD = {
-  key: "clothes",
-  wide: true,
-  clickable: true,
-  chapter: "clothes",
-  image: "assets/clothes-chapter.jpeg",
-  category: "puțină magie în garderobă",
-  title: "Haine",
-  description:
-    "Piese pe care le-am salvat și le-am combinat în minte — pentru că împlinirea vârstei de optsprezece ani merită câteva capitole noi și în garderobă.",
+    key: "clothes",
+    wide: true,
+    clickable: true,
+    chapter: "clothes",
+    image: "assets/clothes-chapter.jpeg",
+    category: "puțină magie în garderobă",
+    title: "Haine",
+    description:
+        "Piese pe care le-am salvat și le-am combinat în minte — pentru că împlinirea vârstei de optsprezece ani merită câteva capitole noi și în garderobă.",
 };
 
 /* ---------- chapter detail-page data ---------- */
@@ -114,163 +174,197 @@ const CHAPTERS = {
     note:
       "Hainele nu sunt doar haine — sunt mici invitații să mă simt încrezătoare, confortabilă și complet eu.",
     gridClass: "clothes-grid",
-    items: [
-      {
-        key: "trench",
-        image: "assets/clothes-chapter.jpeg",
-        alt: "Geacă trenci guler pâlnie",
-        title: "Geacă trenci guler pâlnie",
-        meta: "Bershka · cod 2105/741/800",
-        note: "O geacă pe care o voi purta ani întregi — exact cea pe care mi-o imaginez în zilele reci.",
-      },
-      {
-        key: "jeans",
-        image: "assets/bershka-jeans.jpeg",
-        alt: "Blugi evazați cu talie joasă și broderie",
-        title: "Blugi evazați cu talie joasă și broderie",
-        meta: "Bershka · cod 1042/335/433",
-        note: "Perechea perfectă pentru ținute care merită propriul lor moment de personaj principal.",
-      },
-      {
-        key: "fluffy-jacket",
-        image: "assets/fluffy-jacket.jpeg",
-        alt: "Geacă blăniță care nu năpârlește",
-        title: "Geacă blăniță care nu năpârlește",
-        meta: "alb murdar",
-        note: "Moale, călduroasă și exact geaca la care vreau să apelez toată iarna.",
-      },
-    ],
-  },
+            items: [
+            {
+                key: "trench",
+                image: "assets/clothes-chapter.jpeg",
+                alt: "Geacă trenci guler pâlnie",
+                title: "Geacă trenci guler pâlnie",
+                meta: "Bershka · cod 2105/741/800  Marime: XXS",
+                note: "O geacă pe care o voi purta ani întregi — exact cea pe care mi-o imaginez în zilele reci.",
+            },
+            {
+                key: "jeans",
+                image: "assets/bershka-jeans.jpeg",
+                alt: "Blugi evazați cu talie joasă și broderie",
+                title: "Blugi evazați cu talie joasă și broderie",
+                meta: "Bershka · cod 1042/335/433   Marime: 36",
+                note: "Perechea perfectă pentru ținute care merită propriul lor moment de personaj principal.",
+            },
+            {
+                key: "fluffy-jacket",
+                image: "assets/fluffy-jacket.jpeg",
+                alt: "Geacă blăniță care nu năpârlește",
+                title: "Geacă blăniță care nu năpârlește",
+                meta: "alb murdar",
+                note: "Moale, călduroasă și exact geaca la care vreau să apelez toată iarna.",
+            },
+            {
+                key: "cardigan-albastru",
+                image: "assets/cardigan_albastru.jpg",
+                alt: "Set de 2 piese cu cardigan și top albastru",
+                title: "Set de 2 piese cu cardigan și top albastru",
+                meta: "H&M · cod 1350492001  Marime: XS",
+                note: "",
+            },
+            {
+                key: "cardigan-gri-deschis",
+                image: "assets/cardigan_gri_deschis.jpg",
+                alt: "Set de 2 piese cu cardigan și top gri deschis",
+                title: "Set de 2 piese cu cardigan și top gri deschis",
+                meta: "H&M · cod 1350492001  Marime: XS",
+                note: "",
+            },
+            {
+                key: "bluza_neagra",
+                image: "assets/bluza_neagra.jpg",
+                alt: "Bluză tricotată reiat cu borduri de dantelă",
+                title: "Bluză tricotată reiat cu borduri de dantelă",
+                meta: "H&M · cod 1367088001  Marime: XS",
+                note: "",
+            },
+        ],
+    },
 };
 
 /* ---------- per-person wishlist data ---------- */
 
 const PEOPLE = {
-  mom: {
-    id: "mom",
-    displayName: "Mama",
-    kicker: "PENTRU CEA CARE ȘTIE MEREU",
-    titleHtml: "Wishlist<br><em>pentru Mama.</em>",
-    intro:
-      "Ai ajuns în locul meu mic de dorințe. Mulțumesc că faci fiecare an să se simtă ca acasă.",
-    cards: [
-      {
-        key: "kobo",
-        featured: true,
-        image: "assets/kobo-ereader.jpeg",
-        category: "pentru dimineți liniștite",
-        title: "E-reader Kobo",
-        description:
-          "Pentru fiecare călătorie cu trenul, colț însorit și seară cu „încă un singur capitol”. O inimă curioasă este un lucru frumos.",
-      },
-      {
-        key: "ipad-case",
-        image: "assets/ipad-case.jpeg",
-        category: "neagră sau roz deschis",
-        title: "Husă iPad cu tastatură",
-        description:
-          "Un companion frumos pentru toate notițele și planurile mele — un mic ajutor ca drumul spre maturitate să se simtă al meu.",
-      },
-      {
-        key: "alfaparf",
-        image: "assets/alfaparf-set.jpeg",
-        category: "keratină · ulei · protecție termică",
-        title: "Set Alfaparf pentru păr și îngrijire",
-        description:
-          "Un ritual de îngrijire cu keratină, ulei și spray protector de căldură. Pentru zile cu păr moale și un reminder să am grijă de mine.",
-      },
-      BOOKS_CARD,
-      CLOTHES_CARD,
-    ],
-  },
-  dad: {
-    id: "dad",
-    displayName: "Tata",
-    kicker: "PENTRU CEL CARE MĂ ȚINE ÎN SIGURANȚĂ",
-    titleHtml: "Wishlist<br><em>pentru Tata.</em>",
-    intro:
-      "Ai fost mereu locul meu sigur. Mulțumesc că ai fost lângă mine la fiecare pas și că mă ajuți să cresc cu încredere.",
-    cards: [
-      {
-        key: "manta-ray",
-        featured: true,
-        image: "assets/manta-ray-charm.jpeg",
-        category: "un mic prieten din ocean",
-        title: "Charm Pandora cu manta albastră",
-        description:
-          "Un mic reminder albastru să port cu mine frumusețe și puțină magie — exact așa cum m-ai încurajat mereu.",
-      },
-      {
-        key: "gym",
-        image: "assets/gym-membership.jpeg",
-        category: "pentru a mă simți bine",
-        title: "Abonament la sală",
-        description:
-          "Cadoul care transformă „ar trebui să merg” într-o rutină de care chiar să mă bucur. Mulțumesc că mă încurajezi în fiecare versiune a mea.",
-      },
-      BOOKS_CARD,
-      CLOTHES_CARD,
-    ],
-  },
-  soulmate: {
-    id: "soulmate",
-    displayName: "Soulmate",
-    kicker: "PENTRU OMUL CARE MĂ VEDE",
-    titleHtml: "Wishlist<br><em>for my Soulmate.</em>",
-    intro:
-      "Tu ai primit acces la camera secretă. Aici sunt lucrurile care m-ar face să zâmbesc și să mă gândesc imediat la tine.",
-    cards: [
-      {
-        key: "stitch",
-        featured: true,
-        image: "assets/stitch-charm.jpeg",
-        category: "o mică parte din noi",
-        title: "Charm Pandora Stitch cu trandafir",
-        description:
-          "Un Stitch dulce cu un trandafir — jucăuș, sentimental și imposibil să nu zâmbești când îl vezi. O amintire mică pentru o iubire atât de mare.",
-      },
-      {
-        key: "jellycat",
-        image: "assets/jellycat-bunny.jpeg",
-        category: "moale, amuzant, perfect",
-        title: "Iepuraș Jellycat cu tort de ziua mea",
-        description:
-          "Un iepuraș cu tort pe care să-l păstrez pentru totdeauna, pentru că cele mai frumoase amintiri sunt puțin caraghioase — exact ca momentele noastre preferate.",
-      },
-      BOOKS_CARD,
-      CLOTHES_CARD,
-    ],
-  },
-  friend: {
-    id: "friend",
-    displayName: "Friends",
-    kicker: "PENTRU CINEVA CARE CONTEAZĂ",
-    titleHtml: "Wishlist<br><em>pentru Friends.</em>",
-    intro:
-      "Nu am pus lucruri la întâmplare. Am pus mici idei care mi-ar face ziua mai luminoasă și timp petrecut frumos împreună.",
-    friendLayout: true,
-    cards: [
-      {
-        key: "outing",
-        featured: true,
-        wide: true,
-        image: "assets/coffee-outing.jpeg",
-        category: "cadoul unei zile împreună",
-        title: "O ieșire la cafea",
-        description:
-          "Nu am nevoie de multe, doar de lucruri care rămân în amintire… și o cafea băută împreună ",
-      },
-      {
-        key: "hibiscus",
-        wide: true,
-        image: "assets/hibiscus-charm.jpeg",
-        category: "o floare pentru totdeauna",
-        title: "Charm Pandora talisman cu hibiscus",
-        description:
-          "O floare delicată de purtat atunci când vreau să am cu mine un mic reminder al prieteniei noastre și al bucuriei pe care o aduci în viața mea.",
-      },
-    ],
-  },
+    mom: {
+        id: "mom",
+        displayName: "Mama",
+        kicker: "PENTRU CEA CARE ȘTIE MEREU",
+        titleHtml: "Wishlist<br><em>pentru Mama.</em>",
+        intro:
+            "Ai ajuns în locul meu mic de dorințe. Mulțumesc că faci fiecare an să se simtă ca acasă.",
+        cards: [
+            {
+                key: "kobo",
+                featured: true,
+                image: "assets/kobo-ereader.jpeg",
+                category: "pentru dimineți liniștite",
+                title: "E-reader Kobo",
+                description:
+                    "Pentru fiecare călătorie cu trenul, colț însorit și seară cu „încă un singur capitol”. O inimă curioasă este un lucru frumos.",
+            },
+            {
+                key: "ipad-case",
+                image: "assets/ipad-case.jpeg",
+                category: "neagră sau roz deschis",
+                title: "Husă iPad cu tastatură",
+                description:
+                    "Un companion frumos pentru toate notițele și planurile mele — un mic ajutor ca drumul spre maturitate să se simtă al meu.",
+            },
+            {
+                key: "alfaparf",
+                image: "assets/alfaparf-set.jpeg",
+                category: "keratină · ulei · protecție termică",
+                title: "Set Alfaparf pentru păr și îngrijire",
+                description:
+                    "Un ritual de îngrijire cu keratină, ulei și spray protector de căldură. Pentru zile cu păr moale și un reminder să am grijă de mine.",
+            },
+            BOOKS_CARD,
+            CLOTHES_CARD,
+            LIP_CARD,
+            NALA_CARD,
+            JOSEON_CARD,
+        ],
+    },
+    dad: {
+        id: "dad",
+        displayName: "Tata",
+        kicker: "PENTRU CEL CARE MĂ ȚINE ÎN SIGURANȚĂ",
+        titleHtml: "Wishlist<br><em>pentru Tata.</em>",
+        intro:
+            "Ai fost mereu locul meu sigur. Mulțumesc că ai fost lângă mine la fiecare pas și că mă ajuți să cresc cu încredere.",
+        cards: [
+            {
+                key: "manta-ray",
+                featured: true,
+                image: "assets/manta-ray-charm.jpeg",
+                category: "un mic prieten din ocean",
+                title: "Charm Pandora cu manta albastră",
+                description:
+                    "Un mic reminder albastru să port cu mine frumusețe și puțină magie — exact așa cum m-ai încurajat mereu.",
+            },
+            {
+                key: "gym",
+                image: "assets/gym-membership.jpeg",
+                category: "pentru a mă simți bine",
+                title: "Abonament la sală",
+                description:
+                    "Cadoul care transformă „ar trebui să merg” într-o rutină de care chiar să mă bucur. Mulțumesc că mă încurajezi în fiecare versiune a mea.",
+            },
+            BOOKS_CARD,
+            CLOTHES_CARD,
+            
+            NALA3_CARD,
+
+        ],
+    },
+    soulmate: {
+        id: "soulmate",
+        displayName: "Soulmate",
+        kicker: "PENTRU OMUL CARE MĂ VEDE",
+        titleHtml: "Wishlist<br><em>pentru Soulmate.</em>",
+        intro:
+            "Tu ai primit acces la camera secretă. Aici sunt lucrurile care m-ar face să zâmbesc și să mă gândesc imediat la tine.",
+        cards: [
+            {
+                key: "stitch",
+                featured: true,
+                image: "assets/stitch-charm.jpeg",
+                category: "o mică parte din noi",
+                title: "Charm Pandora Stitch cu trandafir",
+                description:
+                    "Un Stitch dulce cu un trandafir — jucăuș, sentimental și imposibil să nu zâmbești când îl vezi. O amintire mică pentru o iubire atât de mare.",
+            },
+            {
+                key: "jellycat",
+                image: "assets/jellycat-bunny.jpeg",
+                category: "moale, amuzant, perfect",
+                title: "Iepuraș Jellycat cu tort de ziua mea",
+                description:
+                    "Un iepuraș cu tort pe care să-l păstrez pentru totdeauna, pentru că cele mai frumoase amintiri sunt puțin caraghioase — exact ca momentele noastre preferate.",
+            },
+            BOOKS_CARD,
+            CLOTHES_CARD,
+
+        ],
+    },
+    friend: {
+        id: "friend",
+        displayName: "Friend",
+        kicker: "PENTRU CINEVA CARE CONTEAZĂ",
+        titleHtml: "Wishlist<br><em>pentru Friend.</em>",
+        intro:
+            "Nu am pus lucruri la întâmplare. Am pus mici idei care mi-ar face ziua mai luminoasă și timp petrecut frumos împreună.",
+        friendLayout: true,
+        cards: [
+            {
+                key: "outing",
+                featured: true,
+                wide: true,
+                image: "assets/coffee-outing.jpeg",
+                category: "cadoul unei zile împreună",
+                title: "O ieșire la cafea",
+                description:
+                    "Alege un loc, fă-l puțin special și dă-mi o amintire pe care să o pot retrăi mereu. Să cresc e mai frumos cu tine alături.",
+            },
+            {
+                key: "hibiscus",
+                wide: true,
+                image: "assets/hibiscus-charm.jpeg",
+                category: "o floare pentru totdeauna",
+                title: "Charm Pandora talisman cu hibiscus",
+                description:
+                    "O floare delicată de purtat atunci când vreau să am cu mine un mic reminder al prieteniei noastre și al bucuriei pe care o aduci în viața mea.",
+            },
+           
+            NALA2_CARD,
+
+        ],
+    },
 };
 
 const CHOICES = [
