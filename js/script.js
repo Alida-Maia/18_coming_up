@@ -399,19 +399,6 @@ function renderReveal(personId) {
           <p class="reveal-intro">${person.intro}</p>
         </div>
       </section>
-
-      <div class="upload-panel">
-        <div class="upload-copy">
-          <span class="icon">${ICONS.imagePlus}</span>
-          <span class="upload-text">
-            <strong>Fă această scrisoare de ziua mea și mai personală.</strong>
-            Adaugă o fotografie a sărbătoritei pentru o amintire specială.
-          </span>
-        </div>
-        <input class="visually-hidden" accept="image/*" id="photo-input" type="file">
-        <button type="button" class="upload-button" data-upload>${ICONS.camera} adaugă fotografia</button>
-      </div>
-
       <section>
         <div class="wishlist-heading">
           <div>
