@@ -41,7 +41,7 @@ const LIP_CARD = {
     chapter: "Lip_stick",
     image: "assets/Lip_stick.jpg",
     category: "Elegant și dulce",
-    title: "Lip stick",
+    title: "Clinique black honey lipstick",
     description:
         "Nuanța perfectă pentru toamnă și iarnă — exact culoarea care-mi lipsește din trusa de machiaj.",
 };
